@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-black text-white scroll-smooth;
+}
+
+body {
+  @apply text-base;
+}
+
+strong {
+  @apply font-bold;
+}
+
+.teamText {
+  min-height: 50px;
+}
+
+@media only screen and (max-width: 640px) {
+  .heroSeperator {
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+  .teamText {
+    min-height: auto;
+  }
+  .skeletonLeft {
+    position: absolute;
+    width: 130px;
+    bottom: 0px;
+    left: 20px;
+  }
+  .skeletonRight {
+    position: absolute;
+    width: 130px;
+    bottom: 0px;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .heroSeperator {
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+  }
+  .teamText {
+    min-height: auto;
+  }
+} ;
